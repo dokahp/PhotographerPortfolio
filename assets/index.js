@@ -3,14 +3,16 @@ import i18Obj from './translate.js';
 
 let menu = document.querySelector('.mobile-menu')
 let hamburger = document.querySelector(".hamburger")
-let menuItem = document.querySelectorAll(".navigation-link")
+let menuItem = document.querySelectorAll(".navigation-mobile-item .navigation-link")
 let portfolioBtn = document.querySelectorAll('.portfolio-btn')
+
 // MENU
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("is-active")
     menu.classList.toggle('visible')
     menu.classList.toggle('is-active')
 })
+
 for (let el of menuItem) {
     el.addEventListener('click', () => {
         hamburger.classList.toggle("is-active")
